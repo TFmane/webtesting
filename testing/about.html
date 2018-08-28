@@ -56,57 +56,215 @@
   <body>
 	<div class="main">
 	  
-	  	    <!--slideshow container-->
-		<div class="slideshow-container">
-		
-		  <!--full width images with number and caption text-->
-		  
-		  <div class="mySlides fade">
-		    <div class="numbertext">1 / 5</div>
-	        <img src="pictures/IMG_5071.jpg" style="width:100%;">
-			<div class="text">Buster den äldste katten här på gården och älskar att bli klappad</div>
-	      </div>
-		  
-		  <div class="mySlides fade">
-		    <div class="numbertext">2 / 5</div>
-	        <img src="pictures/IMG_5098.jpg" style="width:100%;">
-			<div class="text">Karin den gosiga katt damen</div>
-	      </div>
-		  
-		  <div class="mySlides fade">
-		    <div class="numbertext">3 / 5</div>
-	        <img src="pictures/IMG_5115.jpg" style="width:100%;">
-			<div class="text">Pinie den store kattungen som gillar bus och klappar</div>
-	      </div>
-		  
-		  <div class="mySlides fade">
-		    <div class="numbertext">4 / 5</div>
-	        <img src="pictures/IMG_5114.jpg" style="width:100%;">
-			<div class="text">Pelle som är en ungkatt som även han är glad att bli klappad</div>
-	      </div>
-		  
-		  <div class="mySlides fade">
-		    <div class="numbertext">5 / 5</div>
-	        <img src="pictures/IMG_5066.jpg" style="width:100%;">
-			<div class="text">Hönsen som förser gården med ägg</div>
-	      </div>
-	    
-	      <!-- Next and previous buttons -->
-		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-		<br>
-		
-		<!-- The dots/circles -->
-		<div style="text-align:center">
-		<span class="dot" onclick="currentSlide(1)"></span>
-		<span class="dot" onclick="currentSlide(2)"></span>
-		<span class="dot" onclick="currentSlide(3)"></span>
-		<span class="dot" onclick="currentSlide(4)"></span>
-		<span class="dot" onclick="currentSlide(5)"></span>
-		</div>
+	  	 
 	
-    </div>
+	
+	<!-- here goes the tags for the images that are used as a thumbnail small image then when pressed using java/jQuery/CSS to enlarge the images -->
+	<!--<div class="imgcon">
+	<img src="pictures/IMG_5071.jpg" style="width:10%;" class="imgpic">
+	<div class="imginfo">Cool cat</div>
+	</div>-->
+	
+	
+	<!-- Trigger the Modal -->
+	<!--<img id="myImg" src="pictures/IMG_5066.jpg" alt="Chickens" width="300" height="200">
+	
+	<!-- The Modal -->
+	<!--<div id="myModal" class="modal">
+	
+	  <!-- The Close Button -->
+	  <!--<span class="close">&times;</span>
+	  
+	  <!-- Modal Content (The Image) -->
+	  <!--<img class="modal-content" id="img01">
+	  
+	  <!-- Modal Caption (Image Text) -->
+	  <!--<div id="caption"></div>
+	  
+	</div>-->
+	
+	<!-- Images used to open the lightbox -->
+	<!--<div class="row">
+	  <div class="column">
+	    <img src="pictures/IMG_5066" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+	    <img src="pictures/IMG_5071" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+	    <img src="pictures/IMG_5098" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+	    <img src="pictures/IMG_5114" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	  </div>
+	</div>
+	 
+	<!-- The Modal/Lightbox -->
+	<!--<div id="myModal" class="modal">
+	  <span class="close cursor" onclick="closeModal()">%times;
+	</span>
+	  <div class="modal-content">
+	  
+	    <div class="mySlides">
+		  <div class="numbertext">1 / 4</div>
+		  <img src="pictures/IMG_5066" style="width:100%">
+		</div>
+		
+		<div class="mySlides">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="pictures/IMG_5071" style="width:100%">
+		</div>
+		
+		<div class="mySlides">
+		  <div class="numbertext">3 / 4</div>
+		  <img src="pictures/IMG_5098" style="width:100%">
+		</div>
+		
+		<div class="mySlides">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="pictures/IMG_5114" style="width:100%">
+		</div>
+		
+		<!-- Next/previous controls -->
+		<!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<!-- Caption text -->
+		<!--<div class="caption-container">
+		  <p id="caption"></p>
+		</div>
+		
+		<!-- Thumbnail image controls -->
+		<!--<div class="column">
+		  <img class="demo" src="pictures/IMG_5066" onclick="currentSlide(1)" alt="cat">
+		</div>
+		
+		<div class="column">
+		  <img class="demo" src="pictures/IMG_5071" onclick="currentSlide(2)" alt="katt">
+		</div>
+		
+		<div class="column">
+		  <img class="demo" src="pictures/IMG_5098" onclick="currentSlide(3)" alt="katter">
+		</div>
+		
+		<div class="column">
+		  <img class="demo" src="pictures/IMG_5114" onclick="currentSlide(4)" alt="chickens">
+		</div>
+	  </div>
+    </div>	-->
+		
+		
+		
+		
+	<div class="condiv">
+	
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5066.jpg" alt="Hönsen" class="imgsize"  onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5071.jpg" alt="Buster" class="imgsize"  onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5098.jpg" alt="Karin" class="imgsize" onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5114.jpg" alt="Pelle" class="imgsize" onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5115.jpg" alt="Pinie" class="imgsize" onclick="myFunction(this);">
+	  </div>
+	
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5125.jpg" alt="Grisarna" class="imgsize" onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5089.jpg" alt="Harly" class="imgsize" onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5090.jpg" alt="Elvis" class="imgsize" onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5095.jpg" alt="Lotus" class="imgsize" onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5085.jpg" alt="Getterna" class="imgsize" onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="pictures/IMG_5075.jpg" alt="en av kaninerna" class="imgsize" onclick="myFunction(this);">
+	  </div>
+	  
+	
+	  <!--<div class="bigcon"  >
+	    <div class="secbig " id="secid">
+	      <div class="bigdiv">
+		    <img src="pictures/IMG_5066.jpg" class="bigimg" id="bigid" >
+		  </div>
+	    </div>
+		
+		<div class="secbig" id="secid">
+	      <div class="bigdiv">
+		    <img src="pictures/IMG_5071.jpg" class="bigimg " id="bigid" >
+		  </div>
+	    </div>
+	  
+	  </div>-->
+	  
+	
+	
+
+	
+	
+	</div> <!-- condiv ends here -->
+		
+
+		
+		
+		<div class="container">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <img id="expandedImg" class="bigimg" id="bigid">
+		    <div id="imgtext" class="txtframe"></div>
+		</div>
+		
+		<script>
+
+
+
+
+
+
+
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    
+	var myNodeList = document.querySelectorAll(".imgsize");
+   console.log(myNodeList);
+   
+   expandImg.parentElement.style.display = "block";
+
+}
+
+
+
+    var about = document.getElementById("secid");
+	console.log(about.classList);
+
+		</script>
+		
+		
+	
+    </div> <!-- End div for main div -->
 	
 
 	
