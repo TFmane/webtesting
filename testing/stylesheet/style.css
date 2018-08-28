@@ -78,6 +78,11 @@ ul li a {
 	
 @media only screen and (orientation: portrait) {
 	
+	
+	.main {
+		height: 900px;
+	}
+	
 	/* Makes the landscape menu disapear*/
 	
 	.disappear {
