@@ -157,51 +157,53 @@
 		
 		
 	<div class="condiv">
+	<span class="leftBtn btn" onclick="plusDivs(-1)">&#10094;</span>
+	        <span class="rightBtn btn" onclick="plusDivs(1)">&#10095;</span>
+	  <div class="imgdiv">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5063.JPG" alt="Hönsen" class="imgsize mySlides"  onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5071.JPG" alt="Buster" class="imgsize mySlides"  onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5098.JPG" alt="Karin" class="imgsize mySlides" onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5114.JPG" alt="Pelle" class="imgsize mySlides" onclick="myFunction(this);">
+	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5115.JPG" alt="Pinie" class="imgsize mySlides" onclick="myFunction(this);">
+	  </div>
 	
 	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5063.JPG" alt="Hönsen" class="imgsize"  onclick="myFunction(this);">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5125.JPG" alt="Grisarna" class="imgsize mySlides" onclick="myFunction(this);">
 	  </div>
 	  
 	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5071.JPG" alt="Buster" class="imgsize"  onclick="myFunction(this);">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5089.JPG" alt="Harly" class="imgsize mySlides" onclick="myFunction(this);">
 	  </div>
 	  
 	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5098.JPG" alt="Karin" class="imgsize" onclick="myFunction(this);">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5090.JPG" alt="Elvis" class="imgsize mySlides" onclick="myFunction(this);">
 	  </div>
 	  
 	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5114.JPG" alt="Pelle" class="imgsize" onclick="myFunction(this);">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5095.JPG" alt="Lotus" class="imgsize mySlides" onclick="myFunction(this);">
 	  </div>
 	  
 	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5115.JPG" alt="Pinie" class="imgsize" onclick="myFunction(this);">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5085.JPG" alt="Getterna" class="imgsize mySlides" onclick="myFunction(this);">
 	  </div>
+	  
+	  <div class="imgdiv">
+	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5075.JPG" alt="en av kaninerna" class="imgsize mySlides" onclick="myFunction(this);">
+	  </div>
+	  
 	
-	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5125.JPG" alt="Grisarna" class="imgsize" onclick="myFunction(this);">
-	  </div>
-	  
-	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5089.JPG" alt="Harly" class="imgsize" onclick="myFunction(this);">
-	  </div>
-	  
-	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5090.JPG" alt="Elvis" class="imgsize" onclick="myFunction(this);">
-	  </div>
-	  
-	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5095.JPG" alt="Lotus" class="imgsize" onclick="myFunction(this);">
-	  </div>
-	  
-	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5085.JPG" alt="Getterna" class="imgsize" onclick="myFunction(this);">
-	  </div>
-	  
-	  <div class="imgdiv">
-	    <img src="https://raw.githubusercontent.com/TFmane/webtesting/master/testing/pictures/IMG_5075.JPG" alt="en av kaninerna" class="imgsize" onclick="myFunction(this);">
-	  </div>
-	  
 	
 	  <!--<div class="bigcon"  >
 	    <div class="secbig " id="secid">
@@ -232,6 +234,7 @@
 		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 		  <img id="expandedImg" class="bigimg" id="bigid">
 		    <div id="imgtext" class="txtframe"></div>
+			
 		</div>
 		
 		<script>
@@ -254,6 +257,25 @@ function myFunction(imgs) {
    expandImg.parentElement.style.display = "block";
 
 }
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
 
 
 

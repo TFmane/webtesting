@@ -67,7 +67,10 @@ ul li a {
 
 
 
-
+.condiv {
+	margin: auto;
+	margin-top: 9%;
+}
 
 
 
@@ -291,6 +294,30 @@ position: absolute;
 
 
 
+.btn {
+	
+	margin-top: 8%;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	font-size: 2.9em;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.leftBtn {
+	margin-left: 14%;
+	float: left;
+}
+
+.rightBtn {
+	margin-right: 14%;
+	float: right;
+}
+
+
 
 
 /* Black rectangle around the text for the images */
@@ -304,10 +331,13 @@ position: absolute;
 	padding-right: 0.8vw; /* Sets a little extra space to the right of the text */
 }
 	
+.condiv {
+	margin-top: 40%;
+}
 
 .imgsize {
-	width: 45%; /* Sets how big the thumbnail for the images is being displayed */
-	float: left; /* Makes the images line up horizontally */
+	width: 50%; /* Sets how big the thumbnail for the images is being displayed */
+	
 	
 	margin: auto; /* Makes the images be 0.7% from each other all around them */
 	border-radius: 10%; /* Makes the egdes of the pictures appear soft and rounded */
@@ -391,6 +421,29 @@ position: absolute;
 }
 
 
+.btn {
+	
+	margin-top: 10%;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	font-size: 2.5em;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.leftBtn {
+	margin-left: 28%;
+	float: left;
+}
+
+.rightBtn {
+	margin-right: 28%;
+	float: right;
+}
+
 
 /* Testing my own image enlarge function */
 
@@ -430,9 +483,9 @@ position: absolute;
 }
 
 .imgsize {
-	width: 10%; /* Sets how big the thumbnail for the images is being displayed */
-	float: left; /* Makes the images line up horizontally */
-	margin: 0.7%; /* Makes the images be 0.7% from each other all around them */
+	width: 30%; /* Sets how big the thumbnail for the images is being displayed */
+
+	margin: auto; /* Makes the images be 0.7% from each other all around them */
 	border-radius: 10%; /* Makes the egdes of the pictures appear soft and rounded */
 	box-shadow: 4px 0px green; /* Gives the images a little green shadow behind them */
 }
