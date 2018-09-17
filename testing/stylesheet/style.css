@@ -308,12 +308,12 @@ position: absolute;
 }
 
 .leftBtn {
-	margin-left: 14%;
+	margin-left: 3%;
 	float: left;
 }
 
 .rightBtn {
-	margin-right: 14%;
+	margin-right: 3%;
 	float: right;
 }
 
@@ -336,7 +336,7 @@ position: absolute;
 }
 
 .imgsize {
-	width: 50%; /* Sets how big the thumbnail for the images is being displayed */
+	width: 65%; /* Sets how big the thumbnail for the images is being displayed */
 	
 	
 	margin: auto; /* Makes the images be 0.7% from each other all around them */
