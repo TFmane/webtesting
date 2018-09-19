@@ -74,7 +74,82 @@ ul li a {
 
 
 
+
+/* The CSS for the contact cards */
+.column {
+	border-radius: 2%;
+	width: 33%;
+	margin-bottom: 16px;
+}
+
+@media screen and (max-width: 650px) {
+	
+	.column {
+		width: 100%;
+		display: block;
+	}
+	
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 4%;
+}
+
+.contactcon {
+	padding: 0 16px;
+	text-align: center;
+	border-radius: 4%;
+}
+
+.idimg {
+	border-radius: 4% 4% 0 0;
+}
+
+.contactcon::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.title {
+	color: grey;
+}
+
+.contactbtn {
+	border: none;
+	outline: o;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 4%;
+}
+
+.contactbtn:hover {
+	background-color: #555;
+}
+
+.tint {
+	background-color: rgba(0,204,57,0.91);
+	box-shadow: 2px 3px rgb(0,0,0,0.02);
+	border-radius: 4%;
+	}
+	
+#welcome {
+	font-size: 4.7vw;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	box-shadow: 0px 1px rgba(0,0,0,0.4);
+}
+
 /* Testing designs */
+
+
 
 
 
@@ -357,6 +432,9 @@ position: absolute;
 	object-fit: contain;
 	
 }
+
+
+
 	
 }
 
