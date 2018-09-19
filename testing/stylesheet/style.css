@@ -77,7 +77,7 @@ ul li a {
 
 /* The CSS for the contact cards */
 .column {
-	border-radius: 2%;
+	
 	width: 33%;
 	margin-bottom: 16px;
 }
@@ -93,17 +93,17 @@ ul li a {
 
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	border-radius: 4%;
+	
 }
 
 .contactcon {
 	padding: 0 16px;
 	text-align: center;
-	border-radius: 4%;
+	
 }
 
 .idimg {
-	border-radius: 4% 4% 0 0;
+
 }
 
 .contactcon::after, .row::after {
@@ -126,7 +126,7 @@ ul li a {
 	text-align: center;
 	cursor: pointer;
 	width: 100%;
-	border-radius: 4%;
+	
 }
 
 .contactbtn:hover {
@@ -135,8 +135,8 @@ ul li a {
 
 .tint {
 	background-color: rgba(0,204,57,0.91);
-	box-shadow: 2px 3px rgb(0,0,0,0.02);
-	border-radius: 4%;
+	
+	
 	}
 	
 #welcome {
